@@ -1,7 +1,7 @@
 
 function App() {
   return (
-    <h1>madarchoddd irfarandpnnn </h1>
+    <h1>madarc </h1>
   );
 }
 
