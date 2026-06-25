@@ -5,16 +5,18 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
- let [counter,setcounter]=useState(0)
-
+ let [counter,setcounter]=useState(0);
  const addvalue=()=>{
-  setcounter(counter+1)
+  setcounter(counter+1);
  }
-
  const removevalue=()=>{
-  setcounter(counter-1)
+  if(counter>0){
+    setcounter(counter-1);
+  }
+  else{
+  setcounter(0);
+  }
  }
-
   return (
     <>
 
