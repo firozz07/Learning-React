@@ -1,0 +1,18 @@
+.outer{
+    border: 1px solid black;
+    padding: 20px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    margin-top: 60px;
+    align-self: center;
+}
+.div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
