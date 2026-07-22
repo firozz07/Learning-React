@@ -1,9 +1,10 @@
-function TodoItem() {
+function TodoItem({ todo }) {
   return (
     <div className="todo-item">
       <div className="left">
         <input type="checkbox" />
-        <span>firozz</span>
+
+        <span>{todo.text}</span>
       </div>
 
       <div className="actions">
