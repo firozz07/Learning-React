@@ -1,10 +1,17 @@
-import { useContext } from "react";
-import TodoContext from "./Context/TodoContext";
+import TodoForm from "./components/TodoForm";
+import TodoList from "./components/TodoList";
 
 function App() {
-  const {todo,settodo} = useContext(TodoContext);
+  return (
+    <div className="container">
+      <div className="todo-card">
+        <h1>Todo List</h1>
 
-  return <h1>Hello {todo}</h1>;
+        <TodoForm />
+        <TodoList />
+      </div>
+    </div>
+  );
 }
 
 export default App;
