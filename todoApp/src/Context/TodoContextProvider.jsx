@@ -18,9 +18,15 @@ const deleteTodo = (id) => {
         todos.filter((todo) => todo.id !== id)
     );
 };
-const editTodo=()=>{
-
-}
+const editTodo = (id, newText) => {
+    setTodos(
+        todos.map((todo) =>
+            todo.id === id
+                ? { ...todo, text: newText }
+                : todo
+        )
+    );
+};
 
 
     return(
